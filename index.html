@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUDO App</title>
+    <link rel="stylesheet" href="restaurant.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-header">
+                <div class="nav-logo">
+                    <a href="#" class="logo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsllP5DbQPdKqp9rWbp73aFevfQwBMOEwieA&s"/>
+                        <span>FUDO</span>
+                    </a>
+                </div>
+                <div class="nav-menu-btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+             
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#Home">Why Fudo</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li>
+                    <button class="btn">
+                        <span><i class="ri-login-box-line"></i>Login</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="nav-btns">
+                <button class="btn">
+                    <span><i class="ri-login-box-line"></i>Login</span>
+                </button>
+            </div>
+        </nav>
+        
+        <div class="section-container header-container">
+            <div class="header-image">
+                <img src="https://www.finedininglovers.com/sites/default/files/styles/1_1_768px_width_no_webp/public/2025-06/solo-dining_scroll-mindlessly_istock.jpg?itok=Zono3gvv" alt="">
+            </div>
+            <div class="header-content">
+                <div class="header-tag">
+                    More Than Faster
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB7dLE5F8yFVKMGPBPCVXku4ywAjjZ5pQ9sA&s" alt="header tag"/>
+            </div>
+            <h1>Be the Fastest In Delivering Your <span>Food</span></h1>
+            <p class="section-description">
+                Our job is to filling your tummy with delicious food and with fast and free delivery
+            </p>
+            <div class="header-btns">
+                <button class="btn">Get Started</button>
+                <a href="#">
+                    <span><i class="ri-play-fill"></i></span>
+                    Watch Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-container service-container" id="service">
+        <p class="section-subheader">WHAT WE SERVE</p>
+        <h2 class="section-header">Your Favourite Food Delivery Partner</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK68_PSDqrXa_5IFHOntJAhx9aGppZ8SbZ1oibUQqaKYSLDr95aW4Hku2zLK_qSIbpCcA&usqp=CAU" alt="service">
+                <h4>Easy To Order</h4>
+                <p>You only need a few steps in ordering food</p>
+            </div>
+            <div class="service-card">
+                <img src="data:image/png;base64,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" alt="service">
+                <h4>Fastest Delivery</h4>
+                <p>Delivery that is always ontime even faster</p>
+            </div>
+            <div class="service-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQtcUDBjAVPjAoUaUUALLnN311bV8ZOBjHwA&s" alt="service">
+                <h4>Best Quality</h4>
+                <p>Not only fast for us quality is also number one</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-container menu-container" id="menu">
+        <p class="section-subheader">OUR MENU</p>
+        <h2 class="section-header">Menu That Always Make You Fall In Love</h2>
+        <div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+        <div class="menu-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd_PXmBTugm-lCahliQKPjzPvzSkdR4g1yqQ&s" alt="menu">
+            <div class="menu-card-details">
+                <h4>Italian Pizza</h4>
+                <h5><span>$</span>7.49</h5>
+                <a href="#">
+                    Order Now
+                    <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="menu-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7KGfUw_dXjAyOOBEcMKKVCNDlApYS7ohpdA&s" alt="menu">
+            <div class="menu-card-details">
+                <h4>Burrito Wrap</h4>
+                <h5><span>$</span>7.49</h5>
+                <a href="#">
+                    Order Now
+                    <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="menu-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSif5B5aXrRmtcLQukBvfLvSpnDW2-CsDr9Nq6UhfUtvDDUCNnKrUeB3TRebwvVOg2pHYg&usqp=CAU" alt="menu">
+            <div class="menu-card-details">
+                <h4>Red Sauce Paste</h4>
+                <h5><span>$</span>5.99</h5>
+                <a href="#">
+                    Order Now
+                    <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="menu-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHaIkVjDRcLg0YcoGRTqZBYab2vw-TpYP6Hu0aZ8Ds2N12I2z2TBXGQbz5-N4StkwYibM&usqp=CAU" alt="menu">
+            <div class="menu-card-details">
+                <h4>Fresh Pan Pizza</h4>
+                <h5><span>$</span>6.49</h5>
+                <a href="#">
+                    Order Now
+                    <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="menu-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWKuVUOONlUMRKvxSE8h7xmBMGbKDu4A9A3w&s" alt="menu">
+            <div class="menu-card-details">
+                <h4>Chicken Nuggets</h4>
+                <h5><span>$</span>4.99</h5>
+                <a href="#">
+                    Order Now
+                    <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="menu-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOcZ1GJ2tzkfPvUcJkcjtuyjLy3N8Yu9gJGQ&s" alt="menu">
+            <div class="menu-card-details">
+                <h4>Dum Biriyani</h4>
+                <h5><span>$</span>8.49</h5>
+                <a href="#">
+                    Order Now
+                    <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section-container client-container" id="client">
+    <div class="client-image">
+        <img src="https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlZnxlbnwwfHwwfHx8MA%3D%3D" alt="client">
+    </div>
+    <div class="client-content">
+        <p class="section-subheader">WHAT THEY SAY</p>
+        <h2 class="section-header">What Our Customer Say About Us</h2>
+        <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam vel a, tempora vitae, id iure veniam exercitationem nisi in corrupti eaque explicabo vero obcaecati illo deserunt asperiores expedita cum, doloribus magnam. Sint quia est expedita quasi blanditiis? Odit quia</p>
+        <div class="client-details">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnLuNJk4aQW5e-fTxuGiuGSpFOyNto0IROnw&s" alt="client">
+            <div>
+                <h4>Robret Williams</h4>
+                <h5>Food Enthusiast</h5>
+            </div>
+        </div>
+        <div class="client-rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>4.8</span>
+        </div>
+    </div>
+</section>
+
+    <section class="download-container" id="contact">
+        <div class="section-container">
+            <div class="download-image">
+                <img src="https://i.etsystatic.com/43203792/r/il/57ad39/4998287858/il_fullxfull.4998287858_jz5z.jpg" alt="download">
+            </div>
+            <div class="download-content">
+                <p class="section-subheader">DOWNLOAD APP</p>
+                <h2 class="section-header">Get Started With Fudo Today!</h2>
+                <p class="section-description">
+                    Discover food wherever and whenever you want and get your food 
+                    delivered on time, everytime
+                </p>
+                <div class="download-btn">
+                    <buttom class="btn">Get The App</buttom>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-container footer-container">
+        <div class="footer-col">
+            <div class="footer-logo">
+                <a href="#" class="logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsllP5DbQPdKqp9rWbp73aFevfQwBMOEwieA&s" alt="logo">
+                    <span>FUDO</span>
+                </a>
+            </div>
+            <p class="section-description">
+               Our job is to filling your tummy with delicious food and with fast 
+               and free delivery 
+            </p>
+            <ul class="footer-socials">
+                <li>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>About</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Why Fudo?</a></li>
+                    <li><a href="#">Partner With Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="footer-bar">
+        Copyrights © 2024 Food App Web. All rights reserved.
+    </div>
+</body>
+<script src="./restaurant.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const scrollRevealOption = {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+    easing: 'ease-in-out',
+    reset: false
+};
+
+ScrollReveal().reveal(".header-image img", {
+    ...scrollRevealOption,
+    origin: "right"
+});
+
+ScrollReveal().reveal(".header-tag", {
+    ...scrollRevealOption,
+    delay: 500
+});
+
+ScrollReveal().reveal(".header-content h1", {
+    ...scrollRevealOption,
+    delay: 1000
+});
+
+ScrollReveal().reveal(".header-content .section-description", {
+    ...scrollRevealOption,
+    delay: 1500
+});
+
+ScrollReveal().reveal(".header-btns", {
+    ...scrollRevealOption,
+    delay: 2000
+});
+ScrollReveal().reveal(".service-card", {
+    ...scrollRevealOption,
+    interval: 500,
+});
+
+const swiper = new Swiper(".swiper",{
+    slidesPerView: "auto",
+    spaceBetween: 30,
+})
+
+ScrollReveal().reveal(".client-image img", {
+    ...scrollRevealOption,
+    origin: "left"
+});
+
+ScrollReveal().reveal(".client-content .service-subheader", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".client-content .section-header", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".client-content .section-description", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+ScrollReveal().reveal(".client-details", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+
+ScrollReveal().reveal(".client-rating", {
+    ...scrollRevealOption,
+    delay: 2500,
+});
+
+ScrollReveal().reveal(".swiper-wrapper", {
+    ...scrollRevealOption,
+    delay: 500
+});
+ScrollReveal().reveal(".swiper-slide", {
+    ...scrollRevealOption,
+    origin: "left",
+    delay: 800,
+    interval: 800,
+});
+ScrollReveal().reveal(".section-subheader", {
+    ...scrollRevealOption,
+    origin: "top",
+    delay: 200,
+    interval: 200,
+});
+ScrollReveal().reveal(".section-header", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 700,
+    interval: 700,
+});
+ScrollReveal().reveal(".download-image img", {
+    ...scrollRevealOption,
+    origin: "right"
+});
+
+ScrollReveal().reveal(".download-content .service-subheader", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".download-content .section-header", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".download-content .section-description", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+ScrollReveal().reveal(".download-btn", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+</script>
+</html>
